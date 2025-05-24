@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <title>AI Poem generator</title>
   </head>
   <body>
@@ -18,7 +19,7 @@
     </header>
 
     <main>
-      <form>
+      <form id="form">
         <input
           type="text"
           placeholder="Enter the topic of the poem"
@@ -29,12 +30,7 @@
         />
         <input type="submit" class="submit" />
       </form>
-      <div id="poem" class="poem">
-        Fair fa' your honest, sonsie face,
-        <br />
-        Great Chieftan o' the Puddin-race!
-        <br />
-      </div>
+      <div id="poem" class="poem"></div>
     </main>
     <footer>
       This AI project was coded by

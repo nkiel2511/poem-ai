@@ -1,8 +1,6 @@
 function generatePoem(event) {
   event.preventDefault();
 
-  poemElement.innerHTML = "Rabbie Burns poem";
-
   new Typewriter("#poem", {
     strings: "Rabbie Burns poem",
     autoStart: true,
