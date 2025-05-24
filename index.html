@@ -20,18 +20,23 @@
     </header>
 
     <main>
-      <form id="form">
-        <input
-          type="text"
-          placeholder="Enter the topic of the poem"
-          autofocus
-          required
-          autocomplete="off"
-          class="text"
-          id="input"
-        />
-        <input type="submit" class="submit" />
-      </form>
+      <div class="form-container">
+        <form id="form">
+          <input
+            type="text"
+            placeholder="Enter the topic of a Scottish poem you'd like to generate"
+            autofocus
+            required
+            autocomplete="off"
+            class="text"
+            id="input"
+          />
+          <input type="submit" class="submit" />
+        </form>
+        <div class="hint">
+          For example: <em>Haggis, Kilts, Susan Boyle etc.</em>
+        </div>
+      </div>
       <div id="poem" class="poem"></div>
     </main>
     <footer>

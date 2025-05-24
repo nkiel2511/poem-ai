@@ -20,6 +20,8 @@ function generatePoem(event) {
     "Must be short and sweet, max 4 lines. Only return me the poem itself, no other wording should be returned.";
   let apiUrl = `https://api.shecodes.io/ai/v1/generate?prompt=${prompt}&context=${context}&key=${apiKey}`;
 
+  let poemText = document.querySelector("#poem");
+  poemText.innerHTML = `<div class="blink">Generating yer poem ya wee dafty ...</div>`;
   axios.get(apiUrl).then(displayPoem);
 }
 
